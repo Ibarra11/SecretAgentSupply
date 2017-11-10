@@ -46,8 +46,8 @@ header .background{
 }
 
 /*Header Site Description on the Background*/
-.background-content{
-	width: 20rem;
+header .background-content{
+	max-width: 20rem;
 	background-color: black;
 	position: relative;
 	top: 9rem;
@@ -58,6 +58,10 @@ header .background{
 .background-content h2{
 	font-size: 2rem;
 	margin-top: 0.25rem;
+}
+
+.background-content h3{
+	font-size: 1rem;
 }
 
 /*Desktop Nav*/
@@ -78,6 +82,49 @@ header nav a{
 }
 header .mobile-tablet-nav{
 	display: none;
+}
+/*Tablet Design For Header Section*/
+@media only screen and (max-width: 1024px){
+	.container{
+		width: 100%;
+		margin: 0;
+	}
+
+	header .desktop-nav{
+		display: none;
+	}
+
+	header .mobile-tablet-nav{
+		display: block;
+		background-color: firebrick;
+	}
+
+	header nav ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+/*Mobile Desing for Header Section*/
+@media only screen and (max-width: 470px){
+	header .background{
+		height: 15rem;
+	}
+
+	header .background-content{
+		top: 10rem;
+		padding: 1rem 2rem;
+		max-width: 100%;
+	}
+
+
+	.background-content h2{
+		font-size: 1rem;
+	}
+
+	.background-content h3{
+		font-size: 0.77rem;
+	}
 }
 
 /*Main Section*/
@@ -117,6 +164,35 @@ header .mobile-tablet-nav{
 	max-height: 100%;
 }
 
+@media only screen and (max-width: 1024px){
+	#products-section .product-container{
+	width: 47%;
+}
+	/*So only two products are visible */
+	#product-3{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 470px){
+	#product-2{
+		display: none;
+	}
+	#visiting-info{
+		flex-direction: column;
+	}
+
+	#products-section .product-container, #visiting-info .visiting-container{
+		width: 90%;
+		margin: 0 auto;
+	}
+	#visiting-info .visiting-container{
+		margin-top: 0.5rem;
+	}
+
+
+}
+
 /*Visiting Info*/
 #visiting-info{
 	margin: 3rem 0 4rem 0;
@@ -140,6 +216,12 @@ footer{
 	background-color: black;
 	display: flex;
 	align-items: center;
+}
+
+@media only screen and (max-width: 470px){
+	footer{
+		text-align: center;
+	}
 }
 
 
