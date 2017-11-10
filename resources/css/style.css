@@ -117,6 +117,32 @@ header .mobile-tablet-nav{
 	max-height: 100%;
 }
 
+/*Visiting Info*/
+#visiting-info{
+	margin: 3rem 0 4rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+.visiting-container{
+	width: 35%;
+}
+.visiting-container h3{
+	background-color: black;
+	padding: 1rem 2rem;
+}
+
+.visiting-container span{
+	color: black;
+}
+/*Footer Styles*/
+footer{
+	height: 5rem;
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+
+
 
 
 
